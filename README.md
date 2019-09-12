@@ -5,7 +5,7 @@ All code has been written in [Visual Studio 2017](https://www.nuget.org/packages
 ```bash
 PM> Install-Package NewsAPI -Version 0.5.0
 ```
-I have also included the following line in the solution (NEWS.sln)
+I have also included the following line in the project file (NEWS.csproj)
 ```bash
 <PackageReference Include="NewsAPI" Version="0.5.0" />
 ```
