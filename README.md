@@ -9,3 +9,5 @@ I have also included the following line in the solution (NEWS.sln)
 ```bash
 <PackageReference Include="NewsAPI" Version="0.5.0" />
 ```
+## API Key
+At line 115, the API key has been removed. This key was retreived at [NewsAPI.org](https://newsapi.org/)
