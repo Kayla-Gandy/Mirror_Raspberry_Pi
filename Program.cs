@@ -5,7 +5,6 @@ using System;
 using System.Windows.Forms;
 using System.Threading;
 using System.Drawing;
-//using OpenWeather;
 
 namespace MirrorProgram
 {
@@ -113,7 +112,7 @@ namespace MirrorProgram
         }//method to safely write the string to onlyForm
         public static void News()
         {
-            var NewsApiClient = new NewsApiClient("49e7526290614458a640c5a3f23e9df0"); //pass API key to NewsAPI
+            var NewsApiClient = new NewsApiClient("ENTER API KEY HERE"); //pass API key to NewsAPI
             var articlesResponse = NewsApiClient.GetTopHeadlines(new TopHeadlinesRequest
             {
                 Language = Languages.EN,
@@ -148,16 +147,6 @@ namespace MirrorProgram
             else if (articleNum < 7)
             { articleNum++; }//go to next article
             changeLine.Enabled = true; //start timer
-        }
-        public static void Weather()
-        {
-            //private const string CurrentUrl = "http://api.openweathermap.org/data/2.5/weather?" +
-            //"@QUERY@=Tampa,US&mode=xml&units=imperial&APPID=" + "f5fe52fc8a911fd847c77b971fa91faf";
-            //private const string ForecastUrl = "http://api.openweathermap.org/data/2.5/forecast?" +
-            //"@QUERY@=Tampa,US&mode=xml&units=imperial&APPID=" + "f5fe52fc8a911fd847c77b971fa91faf";
-            //var client = new OpenWeatherAPI.UpdateAPIKey("f5fe52fc8a911fd847c77b971fa91faf");
-            //var results = client.Query("Tampa, US");
-            //Console.WriteLine(results.Main.Temperature.FahrenheitCurrent);
         }
     }
 }
